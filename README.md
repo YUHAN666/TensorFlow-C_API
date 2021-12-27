@@ -3,7 +3,10 @@
 
 C++可以直接调用tensorflow/tensorflow/c/c_api.h中提供的函数，完成创建session，读取graph，运行session等操作。具体操作如下
 
-1.将c_api.h添加到项目引用(include)中，并把其依赖的一系列tensorflow/tensorflow/core中的头文件添加到项目include
+1.将c_api.h添加到项目引用(include)中，并把其依赖的一系列tensorflow/tensorflow/c中的头文件添加到项目include
+2.将编译得到的tensorflow.lib添加到链接器/附加依赖项，tensorflow.dll拷贝至输出目录下，即可调用c_api中的函数。
+
+如果没有编译的tensorflow.lib和tensorflow.dll
 
 2.将tensorflow/python/_pywrap_tensorflow_internal.lib添加到项目链接器/附加依赖项中
 
