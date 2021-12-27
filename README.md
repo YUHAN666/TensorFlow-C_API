@@ -1,5 +1,5 @@
 # TensorFlow-C_API
-使用TensorFlow原生C_API部署pb模型
+使用TensorFlow C_API部署pb模型
 
 C++可以直接调用tensorflow/tensorflow/c/c_api.h中提供的函数，完成创建session，读取graph，运行session等操作。具体操作如下
 
