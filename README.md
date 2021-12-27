@@ -15,3 +15,6 @@ C++可以直接调用tensorflow/tensorflow/c/c_api.h中提供的函数，完成�
 tensorflow的python前端调用的就是_pywrap_tensorflow_internal.pyd中的函数
 
 _pywrap_tensorflow_internal.lib 和_pywrap_tensorflow_internal.pyd 在使用pip install安装tensorflow完成后会生成
+
+
+测试时间发现，使用_pywrap_tensorflow_internal.pyd居然比使用tensorflow.dll要快3倍以上，目前没想明白原因。
